@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+
+}
+
+body {
+    background: black;
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+}
+header {
+    display: block;
+}
+.links {
+    margin-right: 3em;
+    margin-top: 3em;
+    float: right;
+    text-decoration-style: none;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    z-index: 1000000;
+}
+li a {
+    text-decoration: none;
+    list-style-type: none;
+}
+a:visited {
+    color: white;
+}
+.polygon {
+    height: ;
+    top: -1em;
+    position: absolute;
+    left: 65em;
+}
+
+@media screen and (max-width: 320px) {
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Exo 2', sans-serif;
+    
+    }
+    .links {
+        margin-right: 2em;
+    }
+    .polygon {
+        left: 6em
+    }
+    
+}
