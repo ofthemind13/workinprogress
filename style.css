@@ -33,10 +33,18 @@ a:visited {
     color: white;
 }
 .polygon {
-    height: ;
+    height: 60em;
+    width: 60em;
     top: -1em;
     position: absolute;
     left: 65em;
+}
+/*See what this will do for $E0!!!!!!*/
+.Development_CTA {
+    font-size: 6em;
+}
+.Web-design_h3 {
+    font-size: 3em;
 }
 
 @media screen and (max-width: 320px) {
