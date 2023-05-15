@@ -35,6 +35,12 @@ li a {
 a:visited {
     color: white;
 }
+a:visited {
+    color: none;
+}
+li a:hover {
+    color: var(--primary);
+}
 .polygon {
     height: 60em;
     width: 60em;
