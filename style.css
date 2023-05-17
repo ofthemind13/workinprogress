@@ -2,25 +2,12 @@
 
 :root {
     --primary: #00C1FE;
+    --secondary: #4b585c;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Desktop view !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-@media screen and (max-width: 920px) {
-    * {
-        padding: 0;
-        margin: 0;
-        font-family: 'Exo 2', sans-serif;
-    
-    }
-    .links {
-        margin-right: 2em;
-    }
-    .polygon {
-        position: absolute;
-        left: 500em;
-    }
-    
-}
+
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Mobile View!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media screen, (min-width: 300px) and (max-width: 375px) {
 * {
     padding: 0;
     margin: 0;
@@ -42,7 +29,7 @@ header {
     margin-top: 1em;
     margin-left: 1em;
     height: 6em;
-    width: 8em;
+    width: 10em;
 }
 .links {
     text-align: right;
@@ -100,7 +87,7 @@ li a:hover {
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    left: 2em;
+    left: 3em;
     top: 20em;
     height: 20em;
     width: 20em;
@@ -108,12 +95,12 @@ li a:hover {
 .Web-design_h3 {
     position: relative;
     font-size: 2em;
-    color: var(--primary);
     margin-bottom: 2em;
 }
 .Web-design_h1 {
     position: relative;
     font-size: 3em;
+    color: var(--primary);
 
 }
 
@@ -162,4 +149,124 @@ li a:hover {
     to{
         top: 55em;
     }
+}
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Desktop view !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media screen and (min-width: 930px) {
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Exo 2', sans-serif;
+    
+    }
+    body {
+        height: 100%;
+        overflow-x: auto;
+        background: black;
+        font-family: 'Exo 2', sans-serif;
+        color: white;
+    }
+    .logo {
+        height: 8em;
+        width: 14em;
+    }
+    .links {
+        margin-right: 2em;
+        font-size: 1.5em;
+    }
+    .Development_CTA {
+        position: absolute;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        left: 13em;
+        top: 15em;
+        height: 20em;
+        width: 60em;
+    }
+    /*See what this will do for $E0!!!!!!*/
+
+.Web-design_h3 {
+    position: relative;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+.Web-design_h1 {
+    position: relative;
+    font-size: 3em;
+    color: var(--primary);
+
+}
+
+.btn {
+    width: 5em;
+    border: none;
+    position: relative;
+    margin-top: 3em;
+    color: black;
+    background-color: var(--primary);
+    border-radius: 3%;
+    left: 12.75em;
+    font-size: 2em;
+    cursor: pointer;
+}
+.btn:hover {
+    box-shadow: 1px 1px 10px 1px rgba(255,255,255, 0.80);
+    color: var(--primary);
+    background: var(--secondary);
+}
+    .polygon {
+        position: relative;
+        height: 50em;
+        width: 50em;
+        left: -10em;
+        top: -1em;
+    }
+    .poly-div {
+        position: absolute;
+        top: 0;
+        left: 80em;
+    }
+
+    .polygon1 {
+        position: relative;
+        left: 2em;
+        animation: bounce 5s ease-in-out forwards;
+    }
+    @keyframes bounce {
+        from{
+    
+            opacity: 0%;
+        }
+        to {
+            rotate: 180deg;
+        }
+        
+    }
+    .poly-div1{
+        height: 10em;
+        width: 10em;
+        position: absolute;
+        bottom: 50em;
+    }
+    .poly-div2 {
+        position: absolute;
+        bottom: 57em;
+    }
+    .polygon2 {
+        left: 2em;
+        position: relative;
+        animation: here 5s ease-in-out forwards;
+    }
+    @keyframes here {
+        from{
+            top: 80em;
+        }
+        to{
+            top: 55em;
+        }
+    }
+
+    
 }
