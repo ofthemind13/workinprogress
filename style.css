@@ -196,10 +196,12 @@ li {
 }
 .submit {
     font-size: 1em;
-    width: 25%;
+    width: 60%;
+    height: 2em;
     margin-top: 1em;
     background-color: var(--primary);
     border: none;
+    border-radius: 10%;
 }
 .contact-poly-div {
     position: absolute;
@@ -232,6 +234,18 @@ li {
     position: absolute;
     bottom: 2em;
     left: 1em;
+}
+.contact-polygon2 {
+    position: relative;
+    animation: here 5s ease-in-out forwards;
+}
+@keyframes here {
+    from{
+        top: 30em;
+    }
+    to{
+        top: 1.5em;
+    }
 }
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Desktop view !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
