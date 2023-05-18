@@ -150,6 +150,89 @@ li a:hover {
         top: 55em;
     }
 }
+.contact-CTA {
+    position: absolute;
+    display: flex;
+    top: 5em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40em;
+    
+}
+.contact-info {
+    position: relative;
+    top: -8em;
+}
+li {
+    list-style-type: none;
+}
+.contact-form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--secondary);
+    height: 20em;
+    width: 15em;
+    left: 50%;
+    top: 45%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+.name, .email, .message {
+    bottom: 2em;
+    position: relative;
+    color: white;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: none;
+    border-bottom: 3px solid var(--primary);
+    background-color: transparent;
+
+}
+.submit {
+    font-size: 1em;
+    width: 25%;
+    margin-top: 1em;
+    background-color: var(--primary);
+    border: none;
+}
+.contact-poly-div {
+    position: absolute;
+    top: 35em;
+    left: 12em;
+}
+.contact-polygon {
+    top: 80em;
+}
+.contact-poly-div1 {
+    position: absolute;
+    bottom: 3em;
+    left: 1em;
+}
+.contact-polygon1 {
+    position: relative;
+    animation: bounce 5s ease-in-out forwards;
+}
+@keyframes bounce {
+    from{
+
+        opacity: 0%;
+    }
+    to {
+        rotate: 180deg;
+    }
+    
+}
+.contact-poly-div2 {
+    position: absolute;
+    bottom: 2em;
+    left: 1em;
+}
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Desktop view !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 @media screen and (min-width: 930px) {
@@ -268,5 +351,7 @@ li a:hover {
         }
     }
 
-    
+    .contact-form {
+        border: 5px solid var(--secondary);
+    }
 }
