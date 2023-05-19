@@ -246,7 +246,71 @@ li {
         top: 1.5em;
     }
 }
+.about-CTA {
+    top: 11em;
+    left: 51%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.about-h1 {
+position: relative;
+width: 6em;
+text-align: center;
+}
+.about-p {
+    position: relative;
+    width: 22em;
+    margin: 10em 1em 1em 1em;
+    text-align: center;
+}
+.about-poly-div {
+    position: absolute;
+    height: 10em;
+    width: 10em;
+    top: 14em;
+    right: 50%;
+    transform: translateX(-50%);
+}
+.about-poly-div1 {
+    position: absolute;
+    top: 49em;
+    left: 1em;
+    animation: bounce 5s ease-in-out forwards;
+}
+@keyframes bounce {
+    from{
+
+        opacity: 0%;
+    }
+    to {
+        rotate: 180deg;
+    }
+    
+}
+}
+.about-poly-div2 {
+    position: absolute;
+    top: 45em;
+    left: 5em;
+    animation: here 5s ease-in-out forwards;
+}
+.about-polygon2 {
+
+    animation: here 5s ease-in-out forwards;
+}
+@keyframes here {
+    from{
+        top: 80em;
+    }
+    to{
+        top: 49em;
+    }
+}
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Desktop view !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 @media screen and (min-width: 930px) {
     * {
