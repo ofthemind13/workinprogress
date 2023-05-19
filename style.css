@@ -56,10 +56,10 @@ a:visited {
 li a:hover {
     color: var(--primary);
 }
-.polygon {
-    height: 60em;
-    width: 60em;
-    top: 10em;
+.home-polygon {
+    height: 40em;
+    width: 40em;
+    top: 20em;
     position: absolute;
     left: 20em;
     animation: spin 2s linear forwards;
